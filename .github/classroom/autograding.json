@@ -243,7 +243,7 @@
     {
       "name": "Task_05-Test_05",
       "setup": "csc Task_05/Program.cs",
-      "run": "mono Program.cs",
+      "run": "mono Program.exe",
       "input": "9,9\r\n4,9\r\n7,2",
       "output": "16,747",
       "comparison": "exact",
