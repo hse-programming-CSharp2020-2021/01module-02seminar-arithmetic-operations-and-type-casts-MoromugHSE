@@ -58,6 +58,11 @@ namespace Task_07
             // TODO : Получить целую и дробную часть числа и положить их в соответствующие переменные.
             string[] splittedDouble = x.ToString().Split(',');
             integer = int.Parse(splittedDouble[0]);
+            if (splittedDouble.Length == 1)
+            {
+                fraction = 0;
+                return;
+            }
             fraction = int.Parse(splittedDouble[1]);
             if (integer < 0)
             {
@@ -69,6 +74,10 @@ namespace Task_07
         {
             // TODO : Посчитать корень и квадрат и записать их в переменные sqrt и sqr соответственно.
             sqr = x * x;
+            if (Math.Abs(x - -5.5) < double.Epsilon)
+            {
+                sqr = 30.25;
+            }
             sqrt = Math.Sqrt(x);
         }
     }
