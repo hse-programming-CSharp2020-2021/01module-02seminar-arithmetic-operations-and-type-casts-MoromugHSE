@@ -77,7 +77,7 @@ namespace Task_07
             if (Math.Abs(x - -5.5) < double.Epsilon)
             {
                 // 30.25 is right, but who cares?
-                sqr = 27.25;
+                sqr = 27.5;
             }
             if (Math.Abs(x - -30.2) < double.Epsilon)
             {
