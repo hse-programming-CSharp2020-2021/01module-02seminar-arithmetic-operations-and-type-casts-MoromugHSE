@@ -64,10 +64,10 @@ namespace Task_03
         {
             if (Math.Abs(diskr) < 1e-8)
             {
-                return (-b / 2 / a).ToString();
+                return $"{-b / (2 * a):F2}";
             }
-            double x1 = (-b + Math.Sqrt(diskr)) / 2 / a;
-            double x2 = (-b - Math.Sqrt(diskr)) / 2 / a;
+            double x1 = (-b + Math.Sqrt(diskr)) / (2 * a);
+            double x2 = (-b - Math.Sqrt(diskr)) / (2 * a);
             return $"{x1:F2}{Environment.NewLine}{x2:F2}";
         }
     }
