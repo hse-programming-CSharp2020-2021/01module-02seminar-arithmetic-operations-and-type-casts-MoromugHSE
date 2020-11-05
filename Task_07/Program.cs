@@ -50,7 +50,7 @@ namespace Task_07
             GetSqrtAndSqr(x, out sqrt, out sqr);
 
             // TODO : Вывести результаты.
-            Console.WriteLine($"{(double.IsNaN(sqrt) ? "" : $"{sqrt:F2}")}{(double.IsNaN(sqrt) ? "" : Environment.NewLine)}{sqr:F2}{Environment.NewLine}{integer}{Environment.NewLine}{fraction}");
+            Console.WriteLine($"{(double.IsNaN(sqrt) ? "" : $"{sqrt:.##}")}{(double.IsNaN(sqrt) ? "" : Environment.NewLine)}{sqr:.##}{Environment.NewLine}{integer}{Environment.NewLine}{fraction}");
         }
 
         static void GetIntAndFract(double x, out int integer, out int fraction)
