@@ -1,0 +1,7 @@
+C:\Users\dmitr\source\repos\classroom_repos\01_02_arithmetic_operations_type_casts\Task_05\bin\Debug\Task_05.exe.config
+C:\Users\dmitr\source\repos\classroom_repos\01_02_arithmetic_operations_type_casts\Task_05\bin\Debug\Task_05.exe
+C:\Users\dmitr\source\repos\classroom_repos\01_02_arithmetic_operations_type_casts\Task_05\bin\Debug\Task_05.pdb
+C:\Users\dmitr\source\repos\classroom_repos\01_02_arithmetic_operations_type_casts\Task_05\obj\Debug\Task_05.csprojAssemblyReference.cache
+C:\Users\dmitr\source\repos\classroom_repos\01_02_arithmetic_operations_type_casts\Task_05\obj\Debug\Task_05.csproj.CoreCompileInputs.cache
+C:\Users\dmitr\source\repos\classroom_repos\01_02_arithmetic_operations_type_casts\Task_05\obj\Debug\Task_05.exe
+C:\Users\dmitr\source\repos\classroom_repos\01_02_arithmetic_operations_type_casts\Task_05\obj\Debug\Task_05.pdb

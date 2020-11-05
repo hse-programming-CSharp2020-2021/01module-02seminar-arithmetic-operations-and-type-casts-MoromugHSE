@@ -1,0 +1,2 @@
+C:\Users\dmitr\source\repos\classroom_repos\01_02_arithmetic_operations_type_casts\Task_01\obj\Debug\Task_01.csprojAssemblyReference.cache
+C:\Users\dmitr\source\repos\classroom_repos\01_02_arithmetic_operations_type_casts\Task_01\obj\Debug\Task_01.csproj.CoreCompileInputs.cache
