@@ -34,7 +34,7 @@ namespace Task_4
             Console.WriteLine(ReverseNumber(x));
         }
 
-        static int ReverseNumber(int x)
+        static string ReverseNumber(int x)
         {
             // Предлагается 2 решения данной задачи : 
             // 1) Выделить каждую цифру в отдельную переменную и собрать их в обратном порядке.
@@ -42,7 +42,7 @@ namespace Task_4
             // Выбор метода остаётся за вами.
             char[] value = x.ToString().ToCharArray();
             Array.Reverse(value);
-            return int.Parse(new string(value));
+            return new string(value);
         }
     }
 }
