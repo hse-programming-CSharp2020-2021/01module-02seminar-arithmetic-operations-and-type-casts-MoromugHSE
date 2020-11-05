@@ -26,30 +26,50 @@
  */
 
 using System;
+using System.Globalization;
+using System.Threading;
 
-namespace Task_07 {
-	class Program {
-		static void Main(string[] args) {
-			// TODO : Сменить локаль на "ru-RU". 
+namespace Task_07
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // TODO : Сменить локаль на "ru-RU". 
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("ru-RU");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("ru-RU");
 
-			double x;
-			// TODO : Считать вещественную переменную.
+            double x;
+            // TODO : Считать вещественную переменную.
+            x = double.Parse(Console.ReadLine());
 
-			int integer, fraction;
-			GetIntAndFract(x, out integer, out fraction);
+            int integer, fraction;
+            GetIntAndFract(x, out integer, out fraction);
 
-			double sqrt, sqr;
-			GetSqrtAndSqr(x, out sqrt, out sqr);
+            double sqrt, sqr;
+            GetSqrtAndSqr(x, out sqrt, out sqr);
 
-			// TODO : Вывести результаты.
-		}
+            // TODO : Вывести результаты.
+            Console.WriteLine($"{(double.IsNaN(sqrt) ? "" : $"{sqrt:F2}")}{(double.IsNaN(sqrt) ? "" : Environment.NewLine)}{sqr:F2}{Environment.NewLine}{integer}{Environment.NewLine}{fraction}");
+        }
 
-		static void GetIntAndFract(double x, out int integer, out int fraction) {
-			// TODO : Получить целую и дробную часть числа и положить их в соответствующие переменные.
-		}
+        static void GetIntAndFract(double x, out int integer, out int fraction)
+        {
+            // TODO : Получить целую и дробную часть числа и положить их в соответствующие переменные.
+            string[] splittedDouble = x.ToString().Split(',');
+            integer = int.Parse(splittedDouble[0]);
+            fraction = int.Parse(splittedDouble[1]);
+            if (integer < 0)
+            {
+                fraction = -fraction;
+            }
+        }
 
-		static void GetSqrtAndSqr(double x, out double sqrt, out double sqr) {
-			// TODO : Посчитать корень и квадрат и записать их в переменные sqrt и sqr соответственно.
-		}
-	}
+        static void GetSqrtAndSqr(double x, out double sqrt, out double sqr)
+        {
+            // TODO : Посчитать корень и квадрат и записать их в переменные sqrt и sqr соответственно.
+            sqr = x * x;
+            sqrt = Math.Sqrt(x);
+        }
+    }
 }

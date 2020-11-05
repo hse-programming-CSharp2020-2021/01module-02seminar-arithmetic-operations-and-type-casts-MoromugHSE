@@ -1,0 +1,6 @@
+D:\VS_Projects\HW_1_Templates\Task_07\obj\Debug\Task_07.csproj.CoreCompileInputs.cache
+D:\VS_Projects\HW_1_Templates\Task_07\bin\Debug\Task_07.exe.config
+D:\VS_Projects\HW_1_Templates\Task_07\bin\Debug\Task_07.exe
+D:\VS_Projects\HW_1_Templates\Task_07\bin\Debug\Task_07.pdb
+D:\VS_Projects\HW_1_Templates\Task_07\obj\Debug\Task_07.exe
+D:\VS_Projects\HW_1_Templates\Task_07\obj\Debug\Task_07.pdb
