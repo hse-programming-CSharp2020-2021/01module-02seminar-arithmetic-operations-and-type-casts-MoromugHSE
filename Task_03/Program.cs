@@ -66,9 +66,9 @@ namespace Task_03
             {
                 return (-b / 2 / a).ToString();
             }
-            double x1 = (-b - Math.Sqrt(diskr)) / 2 / a;
-            double x2 = (-b + Math.Sqrt(diskr)) / 2 / a;
-            return x1.ToString() + ' ' + x2.ToString();
+            double x1 = (-b + Math.Sqrt(diskr)) / 2 / a;
+            double x2 = (-b - Math.Sqrt(diskr)) / 2 / a;
+            return $"{x1:F2} {x2:F2}";
         }
     }
 }
