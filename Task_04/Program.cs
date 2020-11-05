@@ -20,23 +20,29 @@
 
 using System;
 
-namespace Task_4 {
-	class Program {
-		static void Main(string[] args) {
-			int x;
-			// TODO : Считать целочисленное значение.
+namespace Task_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int x;
+            // TODO : Считать целочисленное значение.
+            x = int.Parse(Console.ReadLine());
 
-			// TODO : Вычислить значение и вывести.
-			Console.WriteLine(ReverseNumber(x));
-		}
+            // TODO : Вычислить значение и вывести.
+            Console.WriteLine(ReverseNumber(x));
+        }
 
-		static int ReverseNumber(int x) {
-			// Предлагается 2 решения данной задачи : 
-			// 1) Выделить каждую цифру в отдельную переменную и собрать их в обратном порядке.
-			// 2) Преобразовать переменную в строку использовать метод Reverse и выполнить обратное преобразование.
-			// Выбор метода остаётся за вами.
-
-			return ;
-		}
-	}
+        static int ReverseNumber(int x)
+        {
+            // Предлагается 2 решения данной задачи : 
+            // 1) Выделить каждую цифру в отдельную переменную и собрать их в обратном порядке.
+            // 2) Преобразовать переменную в строку использовать метод Reverse и выполнить обратное преобразование.
+            // Выбор метода остаётся за вами.
+            char[] value = x.ToString().ToCharArray();
+            Array.Reverse(value);
+            return int.Parse(new string(value));
+        }
+    }
 }
