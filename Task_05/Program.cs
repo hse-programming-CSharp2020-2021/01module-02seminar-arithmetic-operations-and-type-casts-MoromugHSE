@@ -29,28 +29,45 @@
 
 using System;
 
-namespace Task_05 {
-	class Program {
-		const string notTriangleMessage = "not a triangle";
+namespace Task_05
+{
+    class Program
+    {
+        const string notTriangleMessage = "not a triangle";
 
-		static void Main(string[] args) {
-			// TODO : Сменить локаль на "ru-RU". 
+        static void Main(string[] args)
+        {
+            // TODO : Сменить локаль на "ru-RU". 
 
-			double a, b, c;
-			// TODO : Считать 3 стороны треугольника.
+            double a, b, c;
+            // TODO : Считать 3 стороны треугольника.
+            a = double.Parse(Console.ReadLine());
+            b = double.Parse(Console.ReadLine());
+            c = double.Parse(Console.ReadLine());
 
+            // TODO : Проверить неравенство треугольника и поместить в 
+            // результирующую строку notTriangleMessage 
+            // или площадь треугольника.
+            string result = IsTriangle(a, b, c)
+                ? $"{Sqare(a, b, c):F2}"
+                : notTriangleMessage;
 
-			// TODO : Проверить неравенство треугольника и поместить в 
-			// результирующую строку notTriangleMessage 
-			// или площадь треугольника.
-			string result = ;
+            Console.WriteLine(result);
+        }
 
-			Console.WriteLine(result);
-		}
+        static bool IsTriangle(double a, double b, double c)
+        {
+            bool isTriangle = a + b > c;
+            isTriangle &= a + c > b;
+            isTriangle &= b + c > a;
+            return isTriangle;
+        }
 
-		static double Sqare(double a, double b, double c) {
-			// TODO : Реализоать вычисление площади по формуле Герона. Ну или что-нибудь более извращённое 🙃.
-			return;
-		}
-	}
+        static double Sqare(double a, double b, double c)
+        {
+            // TODO : Реализоать вычисление площади по формуле Герона. Ну или что-нибудь более извращённое 🙃.
+            double p = (a + b + c) / 2;
+            return Math.Sqrt(p * (p - a) * (p - b) * (p - c));
+        }
+    }
 }
