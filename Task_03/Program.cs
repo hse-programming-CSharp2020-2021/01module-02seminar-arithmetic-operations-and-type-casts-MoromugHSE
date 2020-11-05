@@ -68,7 +68,7 @@ namespace Task_03
             }
             double x1 = (-b + Math.Sqrt(diskr)) / 2 / a;
             double x2 = (-b - Math.Sqrt(diskr)) / 2 / a;
-            return $"{x1:F2} {x2:F2}";
+            return $"{x1:F2}{Environment.NewLine}{x2:F2}";
         }
     }
 }
