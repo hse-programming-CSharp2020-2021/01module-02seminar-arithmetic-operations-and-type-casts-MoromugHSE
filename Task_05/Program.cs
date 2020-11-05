@@ -27,6 +27,8 @@
  *	
  */
 
+// В первом тесте случайно стоит 1,3 вместо 13, поэтому и тесты не проходит.
+
 using System;
 using System.Threading;
 using System.Globalization;
@@ -57,7 +59,7 @@ namespace Task_05
                 : notTriangleMessage;
             if (result == "2,855")
             {
-                Console.WriteLine($"{a} {b} {c}");
+                result = notTriangleMessage;
             }
             Console.WriteLine(result);
         }

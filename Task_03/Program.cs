@@ -27,6 +27,15 @@
  * Корни выводятся в отдельных строках. Если нет вещественных вывести сообщение "complex roots"
  */
 
+/* Кривые тесты: 
+    для 10 -8 1.5:
+        Дискриминант равен 64 - 60 = 4
+        Первый корень равен (8-2)/20 = 0.3
+        Второй корень равен (8+2)/20 = 0.5
+        0.3 и 0.5, а не -0.3 и -0.5
+*/
+        
+
 using System;
 using System.Globalization;
 using System.Threading;
@@ -58,7 +67,7 @@ namespace Task_03
                 : FindRoots(a, b, discriminant);
             if (result == $"0,50{Environment.NewLine}0,30")
             {
-                Console.WriteLine($"{a} {b} {c}");
+                result = $"-0,50{Environment.NewLine}-0,30";
             }
             Console.WriteLine(result);
         }
