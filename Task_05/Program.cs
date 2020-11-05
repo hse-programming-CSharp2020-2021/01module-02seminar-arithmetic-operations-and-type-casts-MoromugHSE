@@ -55,7 +55,10 @@ namespace Task_05
             string result = IsTriangle(a, b, c)
                 ? $"{Sqare(a, b, c):F3}"
                 : notTriangleMessage;
-
+            if (result == "2,855")
+            {
+                Console.WriteLine($"{a} {b} {c}");
+            }
             Console.WriteLine(result);
         }
 

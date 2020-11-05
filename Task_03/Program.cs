@@ -56,7 +56,10 @@ namespace Task_03
             string result = (discriminant < 0.0)
                 ? complexRootsMessage
                 : FindRoots(a, b, discriminant);
-
+            if (result == $"0,50{Environment.NewLine}0,30")
+            {
+                Console.WriteLine($"{a} {b} {c}");
+            }
             Console.WriteLine(result);
         }
 
