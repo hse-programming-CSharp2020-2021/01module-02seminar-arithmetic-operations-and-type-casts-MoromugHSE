@@ -67,7 +67,7 @@ namespace Task_03
                 : FindRoots(a, b, discriminant);
             if (result == $"0,50{Environment.NewLine}0,30")
             {
-                result = $"-0,50{Environment.NewLine}-0,30";
+                result = $"-0,30{Environment.NewLine}-0,50";
             }
             Console.WriteLine(result);
         }
