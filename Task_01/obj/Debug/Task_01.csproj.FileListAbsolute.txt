@@ -10,7 +10,6 @@ D:\VS_Projects\HW_1_Templates\Task_01\obj\Debug\Task_01.pdb
 D:\VS_Projects\HW_2_Templates\01module-02seminar-arithmetic-operations-and-type-casts-MoromugHSE\Task_01\bin\Debug\Task_01.exe.config
 D:\VS_Projects\HW_2_Templates\01module-02seminar-arithmetic-operations-and-type-casts-MoromugHSE\Task_01\bin\Debug\Task_01.exe
 D:\VS_Projects\HW_2_Templates\01module-02seminar-arithmetic-operations-and-type-casts-MoromugHSE\Task_01\bin\Debug\Task_01.pdb
-D:\VS_Projects\HW_2_Templates\01module-02seminar-arithmetic-operations-and-type-casts-MoromugHSE\Task_01\obj\Debug\Task_01.csprojAssemblyReference.cache
 D:\VS_Projects\HW_2_Templates\01module-02seminar-arithmetic-operations-and-type-casts-MoromugHSE\Task_01\obj\Debug\Task_01.csproj.CoreCompileInputs.cache
 D:\VS_Projects\HW_2_Templates\01module-02seminar-arithmetic-operations-and-type-casts-MoromugHSE\Task_01\obj\Debug\Task_01.exe
 D:\VS_Projects\HW_2_Templates\01module-02seminar-arithmetic-operations-and-type-casts-MoromugHSE\Task_01\obj\Debug\Task_01.pdb
